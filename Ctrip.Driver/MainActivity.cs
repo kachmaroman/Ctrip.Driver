@@ -264,7 +264,7 @@ namespace Ctrip.Driver
             _availablityListener = null;
         }
 
-        private void AvailablityListener_RideAssigned(object sender, AvailablityListener.RideAssignedIDEventArgs e)
+        private void AvailablityListener_RideAssigned(object sender, AvailablityListener.RideAssignedIdEventArgs e)
         {
 	        _rideDetailsListener = new RideDetailsListener();
             _rideDetailsListener.Create(e.RideId);

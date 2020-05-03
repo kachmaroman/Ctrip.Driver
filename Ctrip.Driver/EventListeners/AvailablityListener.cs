@@ -10,12 +10,12 @@ namespace Ctrip.Driver.EventListeners
         FirebaseDatabase _database;
         DatabaseReference _availablityRef;
 
-        public class RideAssignedIDEventArgs : EventArgs
+        public class RideAssignedIdEventArgs : EventArgs
         {
             public string RideId { get; set; }
         }
 
-        public event EventHandler<RideAssignedIDEventArgs> RideAssigned;
+        public event EventHandler<RideAssignedIdEventArgs> RideAssigned;
         public event EventHandler RideCancelled;
         public event EventHandler RideTimedOut;
 
@@ -29,9 +29,10 @@ namespace Ctrip.Driver.EventListeners
             if (snapshot.Value != null)
             {
                 string rideId = snapshot.Child("ride_id").Value.ToString();
-                if(rideId != "waiting" && rideId != "timeout" && rideId != "cancelled")
+
+                if (rideId != "waiting" && rideId != "timeout" && rideId != "cancelled")
                 {
-	                RideAssigned?.Invoke(this, new RideAssignedIDEventArgs { RideId = rideId });
+	                RideAssigned?.Invoke(this, new RideAssignedIdEventArgs { RideId = rideId });
                 }
                 else if (rideId == "timeout")
                 {

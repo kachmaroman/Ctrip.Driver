@@ -29,8 +29,8 @@ namespace Ctrip.Driver.EventListeners
                 rideDetails.DestinationLng = double.Parse(snapshot.Child("destination").Child("longitude").Value.ToString());
 
                 rideDetails.PickupAddress = snapshot.Child("pickup_address").Value.ToString();
-                rideDetails.PickupLat = double.Parse(snapshot.Child("location").Child("latitude").Value.ToString());
-                rideDetails.PickupLng = double.Parse(snapshot.Child("location").Child("longitude").Value.ToString());
+                rideDetails.PickupLat = double.Parse(snapshot.Child("pickup").Child("latitude").Value.ToString());
+                rideDetails.PickupLng = double.Parse(snapshot.Child("pickup").Child("longitude").Value.ToString());
 
 
                 rideDetails.RideId = snapshot.Key;
@@ -44,10 +44,10 @@ namespace Ctrip.Driver.EventListeners
             }
         }
 
-        public void Create(string ride_id)
+        public void Create(string rideId)
         {
             FirebaseDatabase database = AppDataHelper.GetDatabase();
-            DatabaseReference rideDetailsRef = database.GetReference("rideRequest/" + ride_id);
+            DatabaseReference rideDetailsRef = database.GetReference("Ride_requests/" + rideId);
             rideDetailsRef.AddListenerForSingleValueEvent(this);
         }
     }

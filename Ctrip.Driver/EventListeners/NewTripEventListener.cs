@@ -39,7 +39,7 @@ namespace Ctrip.Driver.EventListeners
 
         public void Create()
         {
-            _tripRef = database.GetReference("rideRequest/" + mRideID);
+	        _tripRef = database.GetReference("Ride_requests/" + mRideID);
             _tripRef.AddValueEventListener(this);
         }
 
