@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+
 <android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rootView"
@@ -23,16 +23,6 @@
                 android:layout_width="120dp"
                 android:layout_centerInParent="true"
                 android:scaleType="centerCrop"/>
-
-            <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:text="UBER DRIVER"
-                android:layout_below="@+id/centerImage"
-                android:textColor="@color/uberWhite"
-                android:layout_alignParentBottom="true"
-                android:textSize ="20sp"
-                android:gravity="center"/>
 
         </RelativeLayout>
 

@@ -27,7 +27,7 @@ namespace Ctrip.Driver.Fragments
             _totalfaresText = view.FindViewById<TextView>(Resource.Id.totalfaresText);
             _collectPayButton = view.FindViewById<Button>(Resource.Id.collectPayButton);
 
-            _totalfaresText.Text = "$" + mfares.ToString(CultureInfo.InvariantCulture);
+            _totalfaresText.Text = mfares.ToString(CultureInfo.InvariantCulture) + " UAH";
             _collectPayButton.Click += CollectPayButton_Click;
 
             return view;
