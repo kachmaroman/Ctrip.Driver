@@ -12,7 +12,7 @@ using Ctrip.Driver.Helpers;
 
 namespace Ctrip.Driver.Activities
 {
-    [Activity(Label = "RegistrationActivity", MainLauncher = false, Theme = "@style/UberTheme" )]
+    [Activity(Label = "RegistrationActivity", MainLauncher = false, Theme = "@style/ctripTheme" )]
     public class RegistrationActivity : AppCompatActivity
     {
         TextInputLayout _fullNameText;

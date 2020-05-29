@@ -230,13 +230,13 @@
     <AndroidResource Include="Resources\drawable\splash.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\uberroundbutton.xml" />
+    <AndroidResource Include="Resources\drawable\ctriproundbutton.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\uberroundbutton_green.xml" />
+    <AndroidResource Include="Resources\drawable\ctriproundbutton_green.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\uberroundbutton_online.xml" />
+    <AndroidResource Include="Resources\drawable\ctriproundbutton_online.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\menu\bottomnav.xml" />

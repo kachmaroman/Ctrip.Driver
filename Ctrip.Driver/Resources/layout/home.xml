@@ -2,7 +2,7 @@
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:background="@color/uberWhite"
+    android:background="@color/ctripWhite"
     android:layout_height="fill_parent">
 
 	<fragment
@@ -18,7 +18,7 @@
         android:layout_gravity="center"
         android:visibility="invisible"
         android:src="@drawable/greenmarker"
-        android:tint="@color/uberPrimaryColor"/>
+        android:tint="@color/ctripPrimaryColor"/>
 
     <LinearLayout
         android:visibility="invisible"
@@ -56,7 +56,7 @@
                 android:layout_width="40dp"
                 android:padding="10dp"
                 android:background="@drawable/roundedges"
-                android:tint="@color/uberAccentColor"
+                android:tint="@color/ctripAccentColor"
                 android:src="@drawable/ic_clear_black_48dp"
                 android:scaleType="centerCrop" />
 
@@ -69,7 +69,7 @@
                 android:layout_width="40dp"
                 android:padding="10dp"
                 android:background="@drawable/roundedges"
-                android:tint="@color/uberAccentColor"
+                android:tint="@color/ctripAccentColor"
                 android:src="@drawable/ic_call_black_48dp"
                 android:scaleType="centerCrop" />
 
@@ -82,7 +82,7 @@
                 android:layout_width="40dp"
                 android:padding="10dp"
                 android:background="@drawable/roundedges"
-                android:tint="@color/uberAccentColor"
+                android:tint="@color/ctripAccentColor"
                 android:src="@drawable/ic_navigation"
                 android:scaleType="centerCrop" />
 
@@ -106,8 +106,8 @@
                 android:paddingRight="12dp"
                 android:translationZ="2dp"
                 android:elevation="2dp"
-                android:textColor="@color/uberWhite"
-                android:background="@drawable/uberroundbutton"
+                android:textColor="@color/ctripWhite"
+                android:background="@drawable/ctriproundbutton"
                 android:layout_alignParentBottom="true"/>
 
         </RelativeLayout>

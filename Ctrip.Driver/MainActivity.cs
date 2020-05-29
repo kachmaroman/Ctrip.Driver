@@ -19,7 +19,7 @@ using Android.Content;
 
 namespace Ctrip.Driver
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/UberTheme", MainLauncher = false)]
+    [Activity(Label = "@string/app_name", Theme = "@style/ctripTheme", MainLauncher = false)]
     public class MainActivity : AppCompatActivity
     {
 	    Button _goOnlineButton;
@@ -411,7 +411,7 @@ namespace Ctrip.Driver
                 {
                     _homeFragment.GoOffline();
                     _goOnlineButton.Text = "Go Online";
-                    _goOnlineButton.Background = ContextCompat.GetDrawable(this, Resource.Drawable.uberroundbutton);
+                    _goOnlineButton.Background = ContextCompat.GetDrawable(this, Resource.Drawable.ctriproundbutton);
 
                     _availablityStatus = false;
                     TakeDriverOffline();
@@ -429,7 +429,7 @@ namespace Ctrip.Driver
                 _availablityStatus = true;
                 _homeFragment.GoOnline();
                 _goOnlineButton.Text = "Go offline";
-                _goOnlineButton.Background = ContextCompat.GetDrawable(this, Resource.Drawable.uberroundbutton_green);
+                _goOnlineButton.Background = ContextCompat.GetDrawable(this, Resource.Drawable.ctriproundbutton_green);
             }
         }
 

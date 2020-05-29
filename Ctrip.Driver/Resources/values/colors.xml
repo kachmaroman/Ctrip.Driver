@@ -4,15 +4,15 @@
 	<color name="colorPrimaryDark">#1B3147</color>
 	<color name="colorAccent">#3498db</color>
 	<color name="splashBackground">#fff</color>
-	<color name="uberPrimaryColor">#0e1526</color>
-	<color name="uberAccentColor">#18bff2</color>
-	<color name="uberPrimaryDark">#010205</color>
-	<color name="uberWhite">#fff</color>
-	<color name="uberAccentClick">#A25508</color>
-	<color name="uberAsh">#e2e2e2</color>
-	<color name="uberTextColor">#5a5858</color>
-	<color name="uberDarkAsh">#999797</color>
-	<color name="uberBlack">#000</color>
-	<color name="uberGreen">#21ce5d</color>
-	<color name="uberRed">#ed0712</color>
+	<color name="ctripPrimaryColor">#0e1526</color>
+	<color name="ctripAccentColor">#18bff2</color>
+	<color name="ctripPrimaryDark">#010205</color>
+	<color name="ctripWhite">#fff</color>
+	<color name="ctripAccentClick">#A25508</color>
+	<color name="ctripAsh">#e2e2e2</color>
+	<color name="ctripTextColor">#5a5858</color>
+	<color name="ctripDarkAsh">#999797</color>
+	<color name="ctripBlack">#000</color>
+	<color name="ctripGreen">#21ce5d</color>
+	<color name="ctripRed">#ed0712</color>
 </resources>

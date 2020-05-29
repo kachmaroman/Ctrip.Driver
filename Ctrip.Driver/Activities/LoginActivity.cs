@@ -10,7 +10,7 @@ using Ctrip.Driver.Helpers;
 
 namespace Ctrip.Driver.Activities
 {
-	[Activity(Label = "LoginActivity", Theme = "@style/UberTheme", MainLauncher = false)]
+	[Activity(Label = "LoginActivity", Theme = "@style/ctripTheme", MainLauncher = false)]
 	public class LoginActivity : AppCompatActivity
 	{
 		Button _loginButton;

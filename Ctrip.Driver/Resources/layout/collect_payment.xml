@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:minWidth="300dp"
-    android:background="@color/uberWhite"
+    android:background="@color/ctripWhite"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -18,7 +18,7 @@
     <View
         android:layout_height="1dp"
         android:layout_width="match_parent"
-        android:background="@color/uberAsh" />
+        android:background="@color/ctripAsh" />
 
     <LinearLayout
         android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
             android:layout_marginTop="10dp"
             android:layout_height="40dp"
             android:textColor="#fff"
-            android:background="@drawable/uberroundbutton"
+            android:background="@drawable/ctriproundbutton"
             android:id="@+id/collectPayButton" />
 
     </LinearLayout>

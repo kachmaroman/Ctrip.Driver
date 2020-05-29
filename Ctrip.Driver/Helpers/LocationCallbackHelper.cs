@@ -15,7 +15,7 @@ namespace Ctrip.Driver.Helpers
 
         public override void OnLocationAvailability(LocationAvailability locationAvailability)
         {
-            Log.Debug("Uber Clone", "IsLocationAvailable: {0}", locationAvailability.IsLocationAvailable);
+            Log.Debug("ctrip Clone", "IsLocationAvailable: {0}", locationAvailability.IsLocationAvailable);
         }
 
         public override void OnLocationResult(LocationResult result)

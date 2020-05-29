@@ -75,7 +75,7 @@ namespace Ctrip.Driver.EventListeners
         {
             string driverId = AppDataHelper.GetCurrentUser().Uid;
 
-            if(_availablityRef != null)
+            if (_availablityRef != null)
             {
                 DatabaseReference locationref = _database.GetReference("driversAvailable/" + driverId + "/location");
                 HashMap locationMap = new HashMap();

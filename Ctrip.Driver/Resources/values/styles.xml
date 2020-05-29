@@ -9,15 +9,15 @@
 	</style>
 
 
-	<style name="UberTheme" parent="Theme.AppCompat.Light.NoActionBar">
-		<item name="colorPrimary">@color/uberPrimaryColor</item>
-		<item name="colorPrimaryDark">@color/uberPrimaryDark</item>
-		<item name="colorAccent">@color/uberAccentColor</item>
+	<style name="ctripTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorPrimary">@color/ctripPrimaryColor</item>
+		<item name="colorPrimaryDark">@color/ctripPrimaryDark</item>
+		<item name="colorAccent">@color/ctripAccentColor</item>
 		<item name="android:textViewStyle">@style/MyTextViewStyle</item>
 	</style>
 
 	<style name="MyTextViewStyle" parent="android:Widget.TextView">
-		<item name="android:textColor">@color/uberTextColor</item>
+		<item name="android:textColor">@color/ctripTextColor</item>
 	</style>
 
 

@@ -18,7 +18,7 @@
 
         <Button
             android:id="@+id/goOnlineButton"
-            android:background="@drawable/uberroundbutton_online"
+            android:background="@drawable/ctriproundbutton_online"
             android:layout_gravity="center"
             android:textStyle="bold"
             android:text="Go Online"
@@ -46,8 +46,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:background="?android:attr/colorPrimary"
-            app:itemIconTint="@color/uberWhite"
-            app:itemTextColor="@color/uberWhite"
+            app:itemIconTint="@color/ctripWhite"
+            app:itemTextColor="@color/ctripWhite"
             app:menu="@menu/bottomnav"/>
 
     </RelativeLayout>
