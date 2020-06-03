@@ -9,6 +9,7 @@ namespace Ctrip.Driver.EventListeners
     {
         FirebaseDatabase _database;
         DatabaseReference _availablityRef;
+        private string driverId;
 
         public class RideAssignedIdEventArgs : EventArgs
         {
@@ -48,7 +49,7 @@ namespace Ctrip.Driver.EventListeners
         public void Create (Android.Locations.Location myLocation)
         {
             _database = AppDataHelper.GetDatabase();
-            string driverId = AppDataHelper.GetCurrentUser().Uid;
+            driverId = AppDataHelper.GetCurrentUser().Uid;
 
             _availablityRef = _database.GetReference("driversAvailable/" + driverId);
 
@@ -87,7 +88,8 @@ namespace Ctrip.Driver.EventListeners
 
         public void ReActivate()
         {
-            _availablityRef.Child("ride_id").SetValue("waiting");
+	        _availablityRef = _database.GetReference("driversAvailable/" + driverId);
+            _availablityRef?.Child("ride_id").SetValue("waiting");
         }
     }
 }

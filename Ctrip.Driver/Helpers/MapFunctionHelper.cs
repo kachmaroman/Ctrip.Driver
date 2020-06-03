@@ -115,19 +115,16 @@ namespace Ctrip.Driver.Helpers
             MarkerOptions markerOptions = new MarkerOptions();
             markerOptions.SetPosition(firstpoint);
             markerOptions.SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueGreen));
-            markerOptions.SetTitle("Pickup Location");
             _mainMap.AddMarker(markerOptions);
 
             //Constanly Changing Current Location;
             MarkerOptions positionMarkerOption = new MarkerOptions();
             positionMarkerOption.SetPosition(firstpoint);
-            positionMarkerOption.SetTitle("Current Location");
             positionMarkerOption.SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.position));
             PositionMarker = _mainMap.AddMarker(positionMarkerOption);
 
             MarkerOptions markerOptions1 = new MarkerOptions();
             markerOptions1.SetPosition(lastpoint);
-            markerOptions1.SetTitle("Destination");
             markerOptions1.SetIcon(BitmapDescriptorFactory.DefaultMarker(BitmapDescriptorFactory.HueRed));
             DestinationMarker = _mainMap.AddMarker(markerOptions1);
 
